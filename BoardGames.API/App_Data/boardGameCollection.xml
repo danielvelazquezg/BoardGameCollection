@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<BoardGameCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BoardGameList>
+    <BoardGame>
+      <Id>e2c7feb3-2bf8-461e-a121-b24588d18525</Id>
+      <Name>Chess</Name>
+      <Description>Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an eight-by-eight grid. Chess is played by millions of people worldwide, both amateurs and professionals.</Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>2</PlayersMax>
+      <Price>14.49</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>e2c7feb3-2bf8-461e-a121-b24588d18525</Id>
+      <Name>Monopoly</Name>
+      <Description>Monopoly is a board game that originated in the United States in 1903 as a way to demonstrate that an economy which rewards wealth creation is better than one in which monopolists work under few constraints and to promote the economic theories of Henry George and in particular his ideas about taxation.</Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>8</PlayersMax>
+      <Price>14.49</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>e2c7feb3-2bf8-461e-a121-b24588d18525</Id>
+      <Name>Scrabble</Name>
+      <Description>Scrabble is a word game in which two to four players score points by placing tiles, each bearing a single letter, onto a gameboard which is divided into a 15×15 grid of squares. The tiles must form words which, in crossword fashion, flow left to right in rows or downwards in columns. </Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>4</PlayersMax>
+      <Price>14.49</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>80e77521-cb01-4bbe-913e-84c4b819ef67</Id>
+      <Name>Risk</Name>
+      <Description>Risk is a strategy board game produced by Parker Brothers (now a division of Hasbro). Winning Moves also makes a classic 1959 version.</Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>6</PlayersMax>
+      <Price>19.29</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>4b60faf8-3d11-4c9b-82f4-3cd16dbef66a</Id>
+      <Name>Clue</Name>
+      <Description>Clue is a murder mystery game for three to six players, devised by Anthony E. Pratt from Birmingham, England, and currently published by the American game and toy company Hasbro.</Description>
+      <PlayersMin>3</PlayersMin>
+      <PlayersMax>6</PlayersMax>
+      <Price>12.35</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>1f8e2073-b1a1-4744-9dce-e9a17c6bb3d5</Id>
+      <Name>UNO</Name>
+      <Description>Uno is an American card game that is played with a specially printed deck (see Mau Mau for an almost identical game played with normal playing cards).</Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>10</PlayersMax>
+      <Price>5.79</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>32041a77-5d89-42f7-a5f8-76a6dd9cc1a7</Id>
+      <Name>Checkers</Name>
+      <Description>Checkers is a form of the strategy board game draughts. It is played on an 8×8 chequered board with twelve pieces per side.</Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>2</PlayersMax>
+      <Price>3.99</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>6c7e99dd-c2d0-4e65-b32e-fb8a30807465</Id>
+      <Name>Backgammon</Name>
+      <Description>Backgammon is one of the oldest board games known. It is a two player game where playing pieces are moved according to the roll of dice, and a player wins by removing all of his pieces from the board before their opponent.</Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>2</PlayersMax>
+      <Price>4.99</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>b49a1a9e-2140-47a3-bbb9-88f18ccaeeaf</Id>
+      <Name>Pictionary</Name>
+      <Description>Pictionary is a guessing word game invented by Robert Angel with graphic design by Gary Everson and first published in 1985 by Angel Games Inc.</Description>
+      <PlayersMin>4</PlayersMin>
+      <PlayersMax>10</PlayersMax>
+      <Price>9.99</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>f53c30d7-6b32-49a0-93fb-04f89064a72f</Id>
+      <Name>Guess Who</Name>
+      <Description>Guess Who? is a two-player guessing game created by Ora and Theo Coster, also known as Theora Design, that was first manufactured by Milton Bradley in 1979. It was first brought to the UK by Jack Barr Sr in 1982.</Description>
+      <PlayersMin>2</PlayersMin>
+      <PlayersMax>2</PlayersMax>
+      <Price>10.15</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>a6e9f4ba-3bc4-4d4c-ace2-1dc9bb8e3ad1</Id>
+      <Name>Klondike</Name>
+      <Description>Klondike is a patience game (solitaire card game). In the U.S. and Canada, Klondike is known as solitaire, being one of the better known of the family of patience games. The game rose to fame in the late 19th century, being named 'Klondike' after the Canadian region where a gold rush happened. It is rumored that the game was either created or popularized by the prospectors in Klondike.</Description>
+      <PlayersMin>1</PlayersMin>
+      <PlayersMax>1</PlayersMax>
+      <Price>0.99</Price>
+    </BoardGame>
+    <BoardGame>
+      <Id>7c665e7f-8eca-4555-af17-c6ebb0af41a0</Id>
+      <Name>This is a newer game</Name>
+      <Description>test</Description>
+      <PlayersMin>0</PlayersMin>
+      <PlayersMax>0</PlayersMax>
+      <Price>0</Price>
+    </BoardGame>
+  </BoardGameList>
+</BoardGameCollection>

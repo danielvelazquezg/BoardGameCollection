@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Board Gams Tests</title>
+    <meta charset="utf-8" />
+    <link href="../Content/jasmine/jasmine.css" rel="stylesheet"/>
+
+    <script src="../Scripts/jasmine/jasmine.js"></script>
+    <script src="../Scripts/jasmine/jasmine-html.js"></script>
+    <script src="../Scripts/jasmine/boot.js"></script>
+
+    <!--<script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-resource.js"></script>-->
+
+    <!-- Specs -->
+    <script src="boardGameSpec.js"></script>
+
+    <!-- Source -->
+    <script src="SUT.js" type="text/javascript"></script>
+    <!--<script src="../app/boardGames/listCtrl.js"></script>
+    <script src="../app/boardGames/editCtrl.js"></script>-->
+
+    <script type="text/javascript">
+        (function () {
+            var jasminEnv = new jasmine.getEnv();
+
+            var trivialReporter = new jasmin.TrivialReporter();
+
+            jasminEnv.addReporter(trivialReporter);
+
+            jasminEnv.specFilter = function (spec) {
+                return trivialReporter.specFilter(spec);
+            };
+
+            var currentWindoeOnload = window.onload;
+
+            window.onload = function () {
+                if (currentWindoeOnload) {
+                    currentWindoeOnload();
+                }
+                execJasmine();
+            }
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿
+<div class="text-right"><a ng-href="index.html#/new/">New Board Game</a></div>
+
+<div class="panel panel-primary" ng-controller="listCtrl as vm">
+    <div class="panel-heading" style="font-size:large">List</div>
+    
+    <div class="panel-body">
+        <table class="table">
+            <tbody>
+                <tr ng-repeat="boardGame in vm.boardGames">
+                    <td><a ng-href="index.html#/edit/{{boardGame.id}}">{{ boardGame.name }}</a></a></td>
+                    <td>{{ boardGame.description }}</td>
+                    <td>{{ boardGame.playersMin }}</td>
+                    <td>{{ boardGame.playersMax }}</td>
+                    <td>{{ boardGame.price | currency }}</td>
+                    <td>
+                        <span>
+                            <button class="btn btn-danger"
+                                    style="width:80px; margin-right:10px;"
+                                    ng-click="vm.delete(boardGame.id)" >
+                                Delete
+                            </button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <td>Board Game</td>
+                    <td>Description</td>
+                    <td>Players Min</td>
+                    <td>Players Max</td>
+                    <td>Price</td>
+                    <td></td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

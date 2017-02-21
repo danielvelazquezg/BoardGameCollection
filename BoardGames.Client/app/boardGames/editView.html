@@ -1,0 +1,117 @@
+﻿<div><a ng-href="/">Back</a></div>
+
+<form class="form-horizontal"
+      name="boardGameForm"
+      novalidate
+      ng-controller="editCtrl as vm">
+    <fieldset>
+        <legend>Edit Board Game</legend>
+        <div class="form-group"
+             ng-class="{'has-error':boardGameForm.inputBoardGameName.$invalid &&
+                                    boardGameForm.inputBoardGameName.$dirty }">
+            <label class="col-md-2 control-label"
+                   for="inputBoardGameName">Name</label>
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="inputBoardGameName"
+                       name="inputBoardGameName"
+                       type="text"
+                       placeholder="Board Game Name (Required)"
+                       ng-model="vm.boardGame.name"
+                       required
+                       ng-minlength="4"
+                       ng-maxlength="20" />
+            </div>
+            <span class="help-block has-error">
+                <span ng-show="boardGameForm.inputBoardGameName.$error.required">
+                    A board game name is required.
+                </span>
+                <span ng-show="boardGameForm.inputBoardGameName.$error.minlength">
+                    The board game name must be at least 4 characters in length.
+                </span>
+                <span ng-show="boardGameForm.inputBoardGameName.$error.maxlength">
+                    The board game name cannot exceed 20 characters in length.
+                </span>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label"
+                   for="inputBoardGameDescription">Description</label>
+            <div class="col-md-10">
+                <textarea class="form-control"
+                          id="inputBoardGameDescription"
+                          name="inputBoardGameDescription"
+                          placeholder="Description"
+                          rows="3"
+                          ng-model="vm.boardGame.description"
+                          ng-maxlength="250" ></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label"
+                   for="inputBoardGamePlayesMin">Minimum of players</label>
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="inputBoardGamePlayesMin"
+                       name="inputBoardGamePlayesMin"
+                       type="number"
+                       ng-pattern="number"
+                       ng-model="vm.boardGame.playersMin" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label"
+                   for="inputBoardGamePlayesMax">Maximum of playes</label>
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="inputBoardGamePlayesMax"
+                       name="inputBoardGamePlayesMax"
+                       type="number"
+                       ng-pattern="number"
+                       ng-model="vm.boardGame.playersMax" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label"
+                   for="inputBoardGamePrice">Price</label>
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="inputBoardGamePrice"
+                       name="inputBoardGamePrice"
+                       type="text"
+                       ng-model="vm.boardGame.price" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-4 col-md-offset-2">
+                <span>
+                    <button class="btn btn-primary"
+                            style="width:80px; margin-right:10px;"
+                            ng-click="vm.submit()"
+                            ng-disabled="boardGameForm.$invalid">
+                        Save
+                    </button>
+                </span>
+                <span>
+                    <button class="btn btn-default"
+                            style="width:80px;"
+                            ng-click="vm.cancel(boardGameForm)">
+                        Cancel
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <div class="form-group"
+             ng-show="vm.message">
+            <div class="col-md-6">
+                <pre style="font:inherit">{{vm.message}}</pre>
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="Content/bootstrap.css" rel="stylesheet"/>
+</head>
+<body ng-app="ngBoardGames">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Board Games Collection</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+
+    <script src="app/app.js"></script>
+
+    <script src="common/services/boardGame.service.js"></script>
+    <script src="common/resources/boardGameResource.js"></script>
+
+    <script src="app/boardGames/listCtrl.js"></script>
+    <script src="app/boardGames/editCtrl.js"></script>
+    <script src="app/boardGames/deleteCtrl.js"></script>
+</body>
+</html>
